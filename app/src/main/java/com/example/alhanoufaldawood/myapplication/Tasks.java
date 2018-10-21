@@ -8,7 +8,9 @@ public class Tasks {
     String taskId;
     String title;
     String description;
-    String deadline;
+    String date;
+    String time;
+
 
 
 
@@ -16,11 +18,21 @@ public class Tasks {
 
     }
 
-    public Tasks(String taskId, String title, String description, String deadline) {
+    public String getDate() {
+        return date;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public Tasks(String taskId, String title, String description, String date, String time) {
         this.taskId = taskId;
         this.title = title;
         this.description = description;
-        this.deadline = deadline;
+        this.date = date;
+        this.time = time;
+
     }
 
     public String getTaskId() {
@@ -31,9 +43,7 @@ public class Tasks {
         return title;
     }
 
-    public String getDeadline() {
-        return deadline;
-    }
+
 
     public String getDescription() {
         return description;
