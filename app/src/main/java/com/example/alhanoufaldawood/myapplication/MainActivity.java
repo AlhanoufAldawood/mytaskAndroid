@@ -1,5 +1,6 @@
 package com.example.alhanoufaldawood.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -79,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 addTask();
+                Intent AddTask = new Intent(MainActivity.this, TasksList.class);
+                startActivity(AddTask);
             }
         });
     }
